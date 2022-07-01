@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-/*This is a c file written in betty style"*/
+/**
+ * main -entry point
+ *
+ * Description: 'Program prints programming analogy'
+ *
+ * Return: 0 for success
+ */
 
 int main(void)
 {
