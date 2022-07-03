@@ -19,7 +19,7 @@ if (a == 'q' || a == 'e')
 continue;
 }
 putchar (a);
-putchar ('\n');
 }
+putchar ('\n');
 return (0);
 }
