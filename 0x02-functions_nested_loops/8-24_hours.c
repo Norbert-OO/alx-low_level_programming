@@ -25,7 +25,7 @@ if (j < 10)
 {
 _putchar(':');
 _putchar('0');
-_putcahr(j + 0);
+_putchar(j + 0);
 }
 else if (j >= 10)
 {
