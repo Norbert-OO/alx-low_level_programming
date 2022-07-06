@@ -2,7 +2,8 @@
 
 /**
  * _islower - 'A function that
- * checks if character 'c' is lowercase or not'
+ * checks if character is lowercase or not'
+ * @c: character parameter
  * Return: 1 or 0 depending on the condition
  */
 
