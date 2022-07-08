@@ -15,21 +15,35 @@
 
 int main(void)
 {
-int i;
-
-for (i = 1; i <= 100; i++)
+int i = 100;
+int j;
+while (j <= i)
 {
-if (i % 15 == 0)
+if (j % 3 == 0 && j % 5 == 0)
+{
 printf("FizzBuzz ");
+}
 
-else if ((i % 3) == 0)
+else if (j % 3 == 0)
+{
 printf("Fizz ");
+}
 
-else if ((i % 5) == 0)
+else if (j % 5 == 0)
+{
+if (j < i)
 printf("Buzz ");
 
 else
-printf("%d ", i);
+printf("Buzz");
+}
+
+else
+{
+printf("%i ", j);
+}
+
+j++;
 }
 printf("\n");
 return (0);
