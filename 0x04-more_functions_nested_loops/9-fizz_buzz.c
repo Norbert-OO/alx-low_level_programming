@@ -1,49 +1,41 @@
 #include <stdio.h>
-
 /**
- * main - program entry point
+ * main - entry point
  *
- * Description: A  program that prints the
- * numbers from 1 to 100,followed by a new
- * line. But for multiples of three print Fizz
- * instead of the number and for the multiples
- * of five print Buzz. For numbers which are
- * multiples of both three and five print FizzBuzz.
- *
- * Return: "Fizz" or "Buzz" or "FizzBuzz"or number.
+ * Return: Void
  */
 
 int main(void)
 {
-int i = 100;
-int j;
-while (j <= i)
+
+int p = 100;
+int i;
+
+i = 1;
+while (i <= p)
 {
-if (j % 3 == 0 && j % 5 == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz ");
 }
 
-else if (j % 3 == 0)
+else if (i % 3 == 0)
 {
 printf("Fizz ");
 }
 
-else if (j % 5 == 0)
+else if (i % 5 == 0)
 {
-if (j < i)
 printf("Buzz ");
-
-else
-printf("Buzz");
 }
 
 else
 {
-printf("%i ", j);
+printf("%i ", i);
 }
 
-j++;
+i++;
+
 }
 printf("\n");
 return (0);
