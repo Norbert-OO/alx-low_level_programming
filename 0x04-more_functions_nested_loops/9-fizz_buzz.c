@@ -26,7 +26,11 @@ printf("Fizz ");
 
 else if (i % 5 == 0)
 {
+if (i < p)
 printf("Buzz ");
+
+else
+printf("Buzz");
 }
 
 else
