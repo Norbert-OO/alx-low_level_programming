@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 
 /**
  * main - program entry point
@@ -29,7 +29,7 @@ else if ((i % 5) == 0)
 printf("Buzz ");
 
 else
-printf("%d ", i);
+printf("%d \n", i);
 }
-printf('\n');
+return (0);
 }
