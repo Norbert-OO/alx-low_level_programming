@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _strlen - A function that,
@@ -10,11 +9,9 @@
 
 int _strlen(char *s)
 {
-	int len;
+	int length;
 
-	for (; *s != '\0'; s++)
-	{
-		len += 1;
-	}
-	return (len);
+	for (length = 0; s[length] != '\0'; length++)
+		;
+	return (length);
 }
