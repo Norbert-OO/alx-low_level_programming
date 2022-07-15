@@ -27,6 +27,7 @@ if (n == 98)
 printf("%d\n", n);
 else
 printf("%d,", n);
+n = n - 1;
 }
 }
 }
