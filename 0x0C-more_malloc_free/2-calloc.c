@@ -17,7 +17,7 @@
  * Return: Pointer to allocated memory otherwise
  * NULL if size or nmemb == 0.
  */
-void *_calloc(unsigned int nmemb, unsignedint size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
 	unsigned int i;
