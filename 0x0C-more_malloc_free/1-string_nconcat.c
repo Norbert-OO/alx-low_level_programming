@@ -12,8 +12,10 @@ int _strlen(char *string)
 	int i;
 
 	for (i = 0; string[i] != '\0'; i++)
+		;
 		return (i);
 }
+
 /**
  * string_nconcat - A function that concatenates two strings.
  * @s1: string 1
@@ -21,7 +23,7 @@ int _strlen(char *string)
  * @n: n bytes to concat from string
  * Return: Pointer to concatenated string.
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
 	int num, len, i, j;
@@ -35,7 +37,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 	if (num < 0)/*Account for negative n bytes*/
 		return (NULL);
 	if (num >= _strlen(s2))/*Account for n too big*/
-		num *_strlen(s2);
+		num = _strlen(s2);
 	len = _strlen(s1) + num + 1;/*+ 1 to account for null pointer*/
 
 	ptr = malloc(sizeof(*ptr) * len);/* malloc and check for error */
