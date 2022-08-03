@@ -9,7 +9,7 @@
  * @cmp: Pointer to the function to be used to compare values.
  * return: 0
  */
-int int_index(int *array, ints size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
